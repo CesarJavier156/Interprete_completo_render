@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from antlr4 import *
-from MiniLangLexer import MiniLangLexer
-from MiniLangParser import MiniLangParser
+from app_interprete.MiniLangLexer import MiniLangLexer
+from app_interprete.MiniLangParser import MiniLangParser
 from MiniLangvisitoropcional import MiniLangVisitorImpl
 
 app = Flask(__name__)

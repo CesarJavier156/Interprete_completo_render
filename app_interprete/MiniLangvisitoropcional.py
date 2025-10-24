@@ -1,5 +1,5 @@
-from MiniLangVisitor import MiniLangVisitor
-from MiniLangParser import MiniLangParser
+from .MiniLangVisitor import MiniLangVisitor
+from .MiniLangParser import MiniLangParser
 
 class MiniLangVisitorImpl(MiniLangVisitor):
     def __init__(self):

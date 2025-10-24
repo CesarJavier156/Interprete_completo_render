@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: interprete-api
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn Interprete_completo.wsgi:application"
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.4
